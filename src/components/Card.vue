@@ -14,11 +14,11 @@ export default {
 </script>
 <style scoped>
 .card{
-    width:1280px;
+    width:640px;
     height:692px;
     margin:0 auto;
     background:url(../assets/bg.png) no-repeat;
-    background-size: 1280px 692px;
+    background-size: 640px 692px;
 }
 
 </style>

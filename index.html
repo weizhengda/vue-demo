@@ -9,13 +9,4 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
-  <script>
-    var docEl = window.document.documentElement;
-    var width = docEl.getBoundingClientRect().width;
-    if (width < 1280) {
-      var rate = width / 1280;
-      document.getElementById('viewport').setAttribute('content', 'width=device-width,minimum-scale=' + rate + ',maximum-scale=' + rate + ',initial-scale=' + rate + ',user-scalable=no');
-    }
-  
-  </script>
 </html>
