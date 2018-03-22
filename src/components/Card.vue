@@ -49,7 +49,8 @@ export default {
       tel: "",
       time: 60,
       codeStart: false,
-      codeDisable: false
+      codeDisable: false,
+      showTan:false
     };
   },
   methods: {
@@ -62,8 +63,15 @@ export default {
         let me = this;
         setTimeout(function() {
           me.showTan = false;
-        }, 2000);
+        }, 3000);
         return false;
+      }else{
+        this.showTan = true;
+        this.msg = "验证码已发送，请注意查收！";
+        let me = this;
+        setTimeout(function() {
+          me.showTan = false;
+        },3000);
       }
       this.time = "60";
       this.codeDisable = true;
@@ -247,7 +255,7 @@ export default {
   top: 50%;
   left: 50%;
   color: #fff;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.1);
   transform: translate(-50%, -50%);
 }
 </style>
